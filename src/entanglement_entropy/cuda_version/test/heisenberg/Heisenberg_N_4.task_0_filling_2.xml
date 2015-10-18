@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<SIMULATION>
+    <PARAMETERS>
+        <TASK>0</TASK>
+        <PROCESSES>1</PROCESSES>
+        <FILLING sector="2" number_operators="1">
+            <OPERATOR name="C0">2</OPERATOR>
+        </FILLING>
+        <BASIS_SIZE>6</BASIS_SIZE>
+        <EIGENVALUES_CONVERGED>6</EIGENVALUES_CONVERGED>
+        <ITERATIONS_TAKEN>1</ITERATIONS_TAKEN>
+        <TIME_TAKEN>0.001158</TIME_TAKEN>
+        <DEGENERATE_BANDS>4</DEGENERATE_BANDS>
+        <TASK_PARAMETER name="J">5.0000000000000000e-01 + i0.0000000000000000e+00</TASK_PARAMETER>
+        <EIGEN_PAIRS number="6" spaces="4">
+            <EIGENSPACE number="0" degeneracy="1" energy="-4.0000000000000000e+00">
+                <EIGENSTATE number="0" error="0.0000000000000000e+00" state_vector="Heisenberg_N_4.task_0_filling_2_state_0.vec">-4.0000000000000000e+00</EIGENSTATE>
+            </EIGENSPACE>
+            <EIGENSPACE number="1" degeneracy="1" energy="-1.9999999999999998e+00">
+                <EIGENSTATE number="1" error="0.0000000000000000e+00" state_vector="Heisenberg_N_4.task_0_filling_2_state_1.vec">-1.9999999999999998e+00</EIGENSTATE>
+            </EIGENSPACE>
+            <EIGENSPACE number="2" degeneracy="3" energy="-2.5395114425356207e-16">
+                <EIGENSTATE number="2" error="4.1885104550665966e-65" state_vector="Heisenberg_N_4.task_0_filling_2_state_2.vec">-2.5395114425356207e-16</EIGENSTATE>
+                <EIGENSTATE number="3" error="3.8369986585258227e-31" state_vector="Heisenberg_N_4.task_0_filling_2_state_3.vec">-7.2688359562116077e-33</EIGENSTATE>
+                <EIGENSTATE number="4" error="7.4857580145089360e-63" state_vector="Heisenberg_N_4.task_0_filling_2_state_4.vec">3.1906539328530784e-17</EIGENSTATE>
+            </EIGENSPACE>
+            <EIGENSPACE number="3" degeneracy="1" energy="1.9999999999999998e+00">
+                <EIGENSTATE number="5" error="0.0000000000000000e+00" state_vector="Heisenberg_N_4.task_0_filling_2_state_5.vec">1.9999999999999998e+00</EIGENSTATE>
+            </EIGENSPACE>
+        </EIGEN_PAIRS>
+    </PARAMETERS>
+</SIMULATION>

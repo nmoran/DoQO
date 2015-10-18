@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<SIMULATION>
+    <PARAMETERS>
+        <MODEL_TYPE>SPIN_HALF</MODEL_TYPE>
+        <CODE_REVISION>$Rev: 712 $</CODE_REVISION>
+        <SCALAR_TYPE>complex</SCALAR_TYPE>
+        <INTEGER_SIZE>64bits</INTEGER_SIZE>
+        <MODEL_FILE>Heisenberg_N_4.ham</MODEL_FILE>
+        <TASK_LIST>Heisenberg_N_4_tasks</TASK_LIST>
+        <SOLVER_TYPE>krylovschur</SOLVER_TYPE>
+        <MAX_ITERATIONS>10000</MAX_ITERATIONS>
+        <SOLVER_TOLERANCE>1.000000e-13</SOLVER_TOLERANCE>
+        <DEGENERACY_TOLERANCE>1.000000e-10</DEGENERACY_TOLERANCE>
+        <PHASE_TOLERANCE>1.000000e-10</PHASE_TOLERANCE>
+        <MOMENTUM_SECTORS>disabled</MOMENTUM_SECTORS>
+        <PARITY_SECTORS>disabled</PARITY_SECTORS>
+        <FILLING_SECTORS file="Heisenberg_N_4.cons" number="5">enabled</FILLING_SECTORS>
+        <ROTATION_SECTORS>disabled</ROTATION_SECTORS>
+    </PARAMETERS>
+    <RESULTS>
+        <OUTPUT task="0" filling_sector="2">Heisenberg_N_4.task_0_filling_2.xml</OUTPUT>
+    </RESULTS>
+</SIMULATION>

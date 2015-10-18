@@ -1,0 +1,15 @@
+from distutils.core import setup
+from distutils.extension import Extension
+
+setup(
+    name='DoQO',
+    version='1.0',
+    description='Utilities for DoQO.',
+    author='Niall Moran',
+    author_email='niall.moran@gmail.com',
+    license = 'GPLv3',
+    scripts =  ['${CMAKE_CURRENT_SOURCE_DIR}/src/extract_xml_results.py',
+                '${CMAKE_CURRENT_SOURCE_DIR}/src/extract_xml_rescale_results.py'],
+    packages = ['doqo',],
+    package_dir = {'doqo' : '${CMAKE_CURRENT_SOURCE_DIR}/src'},
+)

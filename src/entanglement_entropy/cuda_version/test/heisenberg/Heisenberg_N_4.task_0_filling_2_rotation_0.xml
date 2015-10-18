@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<SIMULATION>
+    <PARAMETERS>
+        <TASK>0</TASK>
+        <PROCESSES>1</PROCESSES>
+        <FILLING sector="2" number_operators="1">
+            <OPERATOR name="C0">2</OPERATOR>
+        </FILLING>
+        <ROTATION sector="0" />
+        <BASIS_SIZE>2</BASIS_SIZE>
+        <EIGENVALUES_CONVERGED>2</EIGENVALUES_CONVERGED>
+        <ITERATIONS_TAKEN>1</ITERATIONS_TAKEN>
+        <TIME_TAKEN>0.000674963</TIME_TAKEN>
+        <DEGENERATE_BANDS>2</DEGENERATE_BANDS>
+        <TASK_PARAMETER name="J">5.0000000000000000e-01 + i0.0000000000000000e+00</TASK_PARAMETER>
+        <EIGEN_PAIRS number="2" spaces="2">
+            <EIGENSPACE number="0" degeneracy="1" energy="-4.0000000000000000e+00">
+                <EIGENSTATE number="0" error="1.6390275689031919e-49" state_vector="Heisenberg_N_4.task_0_filling_2_rotation_0_state_0.vec">-4.0000000000000000e+00</EIGENSTATE>
+            </EIGENSPACE>
+            <EIGENSPACE number="1" degeneracy="1" energy="1.9999999999999998e+00">
+                <EIGENSTATE number="1" error="2.2394161356614313e-49" state_vector="Heisenberg_N_4.task_0_filling_2_rotation_0_state_1.vec">1.9999999999999998e+00</EIGENSTATE>
+            </EIGENSPACE>
+        </EIGEN_PAIRS>
+    </PARAMETERS>
+</SIMULATION>

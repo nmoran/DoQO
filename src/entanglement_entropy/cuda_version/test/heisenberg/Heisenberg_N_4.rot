@@ -1,0 +1,8 @@
+<ROTATION_OPS number="1">
+	<ROTATION_OP number="4">
+		<MAPPING from="1" to="2" />
+		<MAPPING from="2" to="3" />
+		<MAPPING from="3" to="4" />
+		<MAPPING from="4" to="1" />
+	</ROTATION_OP>
+</ROTATION_OPS>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SIMULATION>
+	<PARAMETERS>
+		<MODEL_TYPE>SPIN_HALF</MODEL_TYPE>
+		<MODEL_FILE>Heisenberg_N_4.ham</MODEL_FILE>
+		<TASK_LIST>Heisenberg_N_4_tasks</TASK_LIST>
+		<OUTPUT_PREFIX>Heisenberg_N_4</OUTPUT_PREFIX>
+		<EIGENVALUES>3</EIGENVALUES>
+		<SAVE_STATES format="binary" real="true">true</SAVE_STATES>
+		<SAVE_BASIS>true</SAVE_BASIS>
+		<SOLVER_TYPE>krylovschur</SOLVER_TYPE>
+		<MAX_ITERATIONS>10000</MAX_ITERATIONS>
+		<VERBOSITY>5</VERBOSITY>
+		<SYMMETRIES>
+			<FILLING file="Heisenberg_N_4.cons">
+				<RELEVANT_SECTORS number="1">
+					<SECTOR>2</SECTOR>
+				</RELEVANT_SECTORS>
+			</FILLING>
+			<!--<ROTATION file="Heisenberg_N_4.rot">
+				<RELEVANT_SECTORS number="1">
+					<SECTOR>0</SECTOR>
+				</RELEVANT_SECTORS>
+			</ROTATION>-->
+		</SYMMETRIES>
+	</PARAMETERS>
+</SIMULATION>

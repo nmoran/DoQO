@@ -36,7 +36,7 @@ int main( int argc, char **argv ) {
     
     
     char buf[MAX_STRING];
-    ierr = PetscOptionsGetString(NULL,"-vecs",buf,MAX_STRING,&flg);CHKERRQ(ierr);
+    ierr = PetscOptionsGetString(NULL, NULL, "-vecs",buf,MAX_STRING,&flg);CHKERRQ(ierr);
     if ( flg == PETSC_FALSE) 
       {
 	PetscPrintf(PETSC_COMM_WORLD,"Must specify file which lists vectors and weights with -vecs option.\n");
@@ -46,7 +46,7 @@ int main( int argc, char **argv ) {
     string vecs_file;
     vecs_file.assign(buf);
     
-    ierr = PetscOptionsGetString(NULL,"-o",buf,MAX_STRING,&flg);CHKERRQ(ierr);
+    ierr = PetscOptionsGetString(NULL, NULL, "-o",buf,MAX_STRING,&flg);CHKERRQ(ierr);
     if ( flg == PETSC_FALSE) 
       {
 	PetscPrintf(PETSC_COMM_WORLD,"Must specify output vector on the command line with switch -o.\n");
@@ -56,7 +56,7 @@ int main( int argc, char **argv ) {
     string out_vec;
     out_vec.assign(buf);
                 
-    ierr = PetscOptionsGetString(NULL,"-ascii",buf,MAX_STRING,&flg);CHKERRQ(ierr);
+    ierr = PetscOptionsGetString(NULL, NULL, "-ascii",buf,MAX_STRING,&flg);CHKERRQ(ierr);
     if ( flg == PETSC_FALSE ) 
       {
 	is_ascii = PETSC_FALSE;
@@ -73,7 +73,7 @@ int main( int argc, char **argv ) {
 	  }
       }
           
-    ierr = PetscOptionsGetString(NULL,"-overlap_vec",buf,MAX_STRING,&flg);CHKERRQ(ierr);
+    ierr = PetscOptionsGetString(NULL, NULL, "-overlap_vec",buf,MAX_STRING,&flg);CHKERRQ(ierr);
     string overlap_vec_filename;
     bool use_overlap = false;
     if ( flg == PETSC_TRUE) 

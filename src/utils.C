@@ -123,7 +123,7 @@ int parse_main_input_file(struct parameter_struct *parameters) {
 	PetscTruth flg;
 
 	//Moving to new input mechanism with just one xml input file specifying all parameters
-	ierr = PetscOptionsGetString(NULL,"-input",parameters->input_file,MAX_STRING,&flg);CHKERRQ(ierr);
+	ierr = PetscOptionsGetString(NULL, NULL, "-input",parameters->input_file,MAX_STRING,&flg);CHKERRQ(ierr);
 	if ( flg == PETSC_FALSE) {
 	  PetscPrintf(PETSC_COMM_WORLD, "No input file specified exiting.\n");
 	  return 1;

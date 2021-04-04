@@ -29,7 +29,7 @@ int main( int argc, char **argv ) {
     ierr = MPI_Comm_size(PETSC_COMM_WORLD, &size);CHKERRQ(ierr);        
     
     char buf[MAX_STRING];
-    ierr = PetscOptionsGetString(NULL,"-i",buf,MAX_STRING,&flg);CHKERRQ(ierr);
+    ierr = PetscOptionsGetString(NULL,NULL,"-i",buf,MAX_STRING,&flg);CHKERRQ(ierr);
     if ( flg == PETSC_FALSE) 
       {
 	PetscPrintf(PETSC_COMM_WORLD,"Must specify input matrix on the command line with switch -i.\n");
@@ -38,7 +38,7 @@ int main( int argc, char **argv ) {
     PetscPrintf(PETSC_COMM_WORLD,"Input file: %s\n",buf);
     in_mat.assign(buf);
     
-    ierr = PetscOptionsGetString(NULL,"-o",buf,MAX_STRING,&flg);CHKERRQ(ierr);
+    ierr = PetscOptionsGetString(NULL,NULL,"-o",buf,MAX_STRING,&flg);CHKERRQ(ierr);
     if ( flg == PETSC_FALSE) 
       {
 	PetscPrintf(PETSC_COMM_WORLD,"Must specify output matrix on the command line with switch -o.\n");
@@ -47,7 +47,7 @@ int main( int argc, char **argv ) {
     PetscPrintf(PETSC_COMM_WORLD,"Output file: %s\n",buf);
     out_mat.assign(buf);
                 
-    ierr = PetscOptionsGetString(NULL,"-ascii",buf,MAX_STRING,&flg);CHKERRQ(ierr);
+    ierr = PetscOptionsGetString(NULL,NULL,"-ascii",buf,MAX_STRING,&flg);CHKERRQ(ierr);
     if ( flg == PETSC_FALSE) 
       {
 	is_ascii = PETSC_FALSE;
@@ -65,7 +65,7 @@ int main( int argc, char **argv ) {
       }
       
     use_complex = PETSC_FALSE;
-    ierr = PetscOptionsGetString(NULL,"-complex",buf,MAX_STRING,&flg);CHKERRQ(ierr);
+    ierr = PetscOptionsGetString(NULL,NULL,"-complex",buf,MAX_STRING,&flg);CHKERRQ(ierr);
     if ( flg == PETSC_TRUE) 
       {
 	if ( strcmp(buf,"false") == 0 ) 
@@ -80,7 +80,7 @@ int main( int argc, char **argv ) {
       }
       
     PetscTruth use_compact = PETSC_FALSE;
-    ierr = PetscOptionsGetString(NULL,"-compact",buf,MAX_STRING,&flg);CHKERRQ(ierr);
+    ierr = PetscOptionsGetString(NULL,NULL,"-compact",buf,MAX_STRING,&flg);CHKERRQ(ierr);
     if ( flg == PETSC_TRUE) 
       {
 	if ( strcmp(buf,"false") == 0 ) 
